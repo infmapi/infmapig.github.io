@@ -1,250 +1,693 @@
-<!DOCTYPE html>
 <html>
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SV408GM8XS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <title>PurePro4561 >> Games</title>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
 
-  gtag('config', 'G-SV408GM8XS');
-</script>
+body {
+  margin: 0;
+  background-image: url('IMG_0461.gif');
+}
   
-  <title>PurePro4561 | Games</title>
-  <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6371755899862858"
-     crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="gs.css">
-      <link rel="shortcut icon" type="image/png" href="425A00F8-D504-4B81-AA72-124B2C8924DD.png">
-    <link rel="favicon" href=
-  </head>
-  <center>
-<img alt="" src="https://readme-typing-svg.herokuapp.com?vCenter=true&lines=Welcome+And+Hello!+I+am+PurePro!;Coder+And+Game+Maker">
-  <div>
-<a href="https://docs.google.com/forms/d/166z5qJcBGLJGZQ_v3olCz8s-C4r2IBdPoQEWw3nuXFU/viewform?edit_requested=true"> Reqeust A Game </a>
-    </div>
-    <div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/SZRMfX4BKFs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.search-box {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+.search-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  background: white;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  transform: scale(1.1);
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.game-card {
+  width: 200px;
+  height: 300px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  box-shadow: 0 0 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-decoration: none;
+  border: double 3px transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(to right, aqua, lime);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transition-duration: 0.8s;
+}
+
+  .game-card:hover {
+  width: 400px;
+  height: 600px;
+}
+
+
+.game-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition-duration: 0.8s;
+}
+
+  .game-image:hover {
+  width: 400px;
+  height: 400px;
+}
+
+
+.game-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+a {
+ text-decoration: none;
+}
+
+.game-image {
+  border: double 3px transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(black, black), 
+                    linear-gradient(to right, aqua, lime);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+  
+.game-description {
+  font-size: 16px;
+  color: gray;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<center>
+   <img src="Untitled drawing2.svg" class="logo" style="width: 300px; height: 300px;">
+  
+<div class="search-container">
+  <input type="text" class="search-box" placeholder="Search for mobile games..." id="search-input">
+  <button class="search-button" id="search-button">🔍</button>
+</div>
+
+  <div class="game-container" id="game-container">
+   <div class="game-card" data-title="MotoX3M">
+    <a href="MX3M.html">
+      <img src="logo2.jpg" class="game-image">
+      <div class="game-title">MotoX3M</div>
+      <div class="game-description"></div>
+    </a>
+  </div>
+  <div class="game-card" data-title="Stickmanhook">
+    <a href="Stickmanhook">
+      <img src="logo.png" class="game-image">
+      <div class="game-title">Stickmanhook</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Doge Miner">
+    <a href="DM.html">
+      <img src="logo3.png" class="game-image">
+      <div class="game-title">Doge Miner</div>
+      
+    </a>
+  </div>
+  
+  <div class="game-card" data-title="Just Fall">
+    <a href="JF.html">
+      <img src="logo4.png" class="game-image">
+      <div class="game-title">Just Fall</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Merch">
+    <a href="https://my-store-ee0c19.creator-spring.com">
+      <img src="MD.png" class="game-image">
+      <div class="game-title">Merch</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="1v1 Lol">
+    <a href="1V1L.html">
+      <img src="logo5.png" class="game-image">
+      <div class="game-title">1v1 Lol</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Subway Surfers">
+    <a href="SWS.html">
+      <img src="logo6.png" class="game-image">
+      <div class="game-title">Subway Surfers</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Swerve">
+    <a href="SR.html">
+      <img src="logo7.png" class="game-image">
+      <div class="game-title">Swerve</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Baldis Basics">
+    <a href="BB.html">
+      <img src="logo8.png" class="game-image">
+      <div class="game-title">Baldi's Basics</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Stickman Hook Halloween">
+    <a href="SMHH.html">
+      <img src="logo9.jpg" class="game-image">
+      <div class="game-title">Stickman Hook</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Craft Mine">
+    <a href="CM.html">
+      <img src="logo10.PNG" class="game-image">
+      <div class="game-title">Craft Mine</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Core Ball">
+    <a href="CB.html">
+      <img src="logo11.PNG" class="game-image">
+      <div class="game-title">Core Ball</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Dante">
+    <a href="DT.html">
+      <img src="logo12.png" class="game-image">
+      <div class="game-title">Dante</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Geometry Dash">
+    <a href="GD.html">
+      <img src="logo13.PNG" class="game-image">
+      <div class="game-title">Geometry Dash</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Minecraft Classic">
+    <a href="MC.html">
+      <img src="logo14.png" class="game-image">
+      <div class="game-title">Minecraft Classic</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Back Rooms">
+      <a href="BR.html">
+      <img src="logo15.jpg" class="game-image">
+      <div class="game-title">BackRooms</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Basketball Stars">
+    <a href="BS.html">
+      <img src="logo16.JPG" class="game-image">
+      <div class="game-title">Basketball Stars</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Idle Breakout">
+    <a href="IB.html">
+      <img src="logo17.png" class="game-image">
+      <div class="game-title">Idle Breakout</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Fruit Ninja">
+    <a href="FN.html">
+      <img src="logo18.jpeg" class="game-image">
+      <div class="game-title">Fruit Ninja</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Cannon Basketball">
+    <a href="CNB.html">
+      <img src="logo19.JPG" class="game-image">
+      <div class="game-title">Cannon Basketball</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Paper IO">
+    <a href="PI.html">
+      <img src="logo20.JPG" class="game-image">
+      <div class="game-title">Paper.IO</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Retro Bowl">
+    <a href="RB.html">
+      <img src="logo21.JPG" class="game-image">
+      <div class="game-title">Retro Bowl</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Tanuki Sunset">
+    <a href="TS.html">
+      <img src="logo22.JPG" alt="Logo" class="game-image">
+      <div class="game-title">Tanuki Sunset</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="OVO">
+    <a href="OVO.html">
+      <img src="logo23.png" alt="Logo" class="game-image">
+      <div class="game-title">OVO</div>
+      
+    </a>
+  </div>
+ 
+  <div class="game-card" data-title="Tiny Fishing">
+    <a href="TF.html">
+      <img src="logo25.png" alt="Logo" class="game-image">
+      <div class="game-title">Tiny Fishing</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="2048">
+    <a href="2048.html">
+      <img src="logo26.png" alt="Logo" class="game-image">
+      <div class="game-title">2048</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Stick Merge">
+    <a href="SM.html">
+      <img src="splash.png" alt="Logo" class="game-image">
+      <div class="game-title">Stick Merge</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Basket Bros">
+    <a href="BAB.html">
+      <img src="logo30.JPG" alt="Logo" class="game-image">
+      <div class="game-title">Basket Bros</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="DriveMad">
+    <a href="DriveMad">
+      <img src="logo31.JPG" alt="Logo" class="game-image">
+      <div class="game-title">DriveMad</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="Bitlife">
+    <a href="Bitlife">
+      <img src="logo30.png" alt="Logo" class="game-image">
+      <div class="game-title">Bitlife</div>
+      
+    </a>
+  </div>
+  <div class="game-card" data-title="CrossyRoad">
+    <a href="CrossyRoad">
+      <img src="logo31.PNG" alt="Logo" class="game-image">
+      <div class="game-title">CrossyRoad</div>
+        
+    </a>
+  </div>
+ <div class="game-card" data-title="Circle Pong">
+  <a href="CP.html">
+    <img src="cp.png" class="game-image">
+    <div class="game-title">Circle Pong</div>
+    
+  </a>
+</div>
+
+<div class="game-card" data-title="Ballistic Chickens">
+  <a href="BallisticChickens">
+    <img src="logo32.PNG" class="game-image">
+    <div class="game-title">Ballistic Chickens</div>
+    
+  </a>
+</div>
+
+<div class="game-card" data-title="Flappy Bird">
+  <a href="flappy-bird">
+    <img src="logo33.png" class="game-image">
+    <div class="game-title">Flappy Bird</div>
+    
+  </a>
+</div>
+
+<div class="game-card" data-title="Missles">
+  <a href="Missiles">
+    <img src="logo34.png" class="game-image">
+    <div class="game-title">Missles</div>
+    
+  </a>
+</div>
+
+<div class="game-card" data-title="Cookie Clicker">
+  <a href="CC.html">
+    <img src="logo35.png" class="game-image">
+    <div class="game-title">Cookie Clicker</div>
+    
+  </a>
+</div>
+
+<div class="game-card" data-title="CoolMathGames">
+  <a href="coolmathgames.html">
+    <img src="logo36.png" class="game-image">
+    <div class="game-title">CoolMathGames</div>
+    
+  </a>
+</div>
+
+<div class="game-card" data-title="Worlds Hardest Game">
+  <a href="worlds-hardest-game-2">
+    <img src="logo39.jpg" class="game-image">
+    <div class="game-title">Worlds Hardest Game</div>
+    
+  </a>
+</div>
+
+<div class="game-card" data-title="UGPS">
+  <a href="https://ugps-admin.github.io">
+    <img src="hexa.svg" class="game-image">
+    <div class="game-title">UGPS</div>
+    
+  </a>
+</div>
+
+<div class="game-card" data-title="SoundBoard">
+  <a href="SB.html">
+    <img src="https://raw.githubusercontent.com/3kh0/3kh0-Assets/main/soundboard/img/mlg-favicon.png" class="game-image">
+    <div class="game-title">SoundBoard</div>
+    
+  </a>
+</div>
+
+<div class="game-card" data-title="Soccer Skills Euro Cup">
+  <a href="SS.html">
+    <img src="https://raw.githubusercontent.com/PurePro4561/Gamea-Assets/main/soccer-skills/splash.png" class="game-image">
+    <div class="game-title">Soccer Skills Euro Cup</div>
+    
+  </a>
+</div>
+
+<div class="game-card" data-title="Awesome Tanks">
+  <a href="AT.html">
+    <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/awesometanks2/awesometanks2.jpg" class="game-image">
+    <div class="game-title">Awesome Tanks</div>
+    
+  </a>
+</div>
+<div class="game-card" data-title="Among Us">
+  <a href="AU.html">
+    <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/among-us/red.png" class="game-image">
+    <div class="game-title">Among Us</div>
+    
+  </a>
+</div>
+    <div class="game-card" data-title="Wave Games">
+        <a href="WG.html">
+            <img src="WG.png" class="game-image">
+            <div class="game-title">Wave Games</div>
+            
+        </a>
     </div>
 
-<a href="index.html">
-  <img src="DAC96524-23D1-4D33-B8DF-343E62276EB4.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="https://github.com/PurePro4561/PurePro4561.github.io/discussions">
-  <img src="A2CCE146-FCC1-4C40-A9D4-0D5AF130AF2E.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="https://www.youtube.com/@purepro4561">
-  <img src="https://raw.githubusercontent.com/PurePro4561/PurePro4561.github.io/fc991398023f1a50618aae85e552b953dfee1109/Your%20paragraph%20text%20(1).png" alt="Logo" style="width: 400px; height: 100px;" />
-</a>
-<a href="MX3M.html">
-  <img src="logo2.jpg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="Stickmanhook">
-  <img src="logo.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="DM.html">
-  <img src="logo3.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="https://github.com/purepro4563/purepro4563.github.io">
-  <img src="BD931B98-5DD8-4A13-B513-6C8443BE5627.png" alt="Logo" style="width: 80px; height: 100px;" />
-</a>
-<a href="JF.html">
-  <img src="logo4.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="https://puremerch.mighty.business">
-  <img src="MD.png" alt="Logo" style="width: 400px; height: 100px;" />
-</a>
-<a href="1V1L.html">
-  <img src="logo5.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="SWS.html">
-  <img src="logo6.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="SR.html">
-  <img src="logo7.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="BB.html">
-  <img src="logo8.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="SMHH.html">
-  <img src="logo9.jpg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="CM.html">
-  <img src="logo10.PNG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="CB.html">
-  <img src="logo11.PNG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="DT.html">
-  <img src="logo12.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="GD.html">
-  <img src="logo13.PNG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="MC.html">
-  <img src="logo14.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="BR.html">
-  <img src="logo15.jpg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="BS.html">
-  <img src="logo16.JPG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="IB.html">
-  <img src="logo17.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="FN.html">
-  <img src="logo18.jpeg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="CNB.html">
-  <img src="logo19.JPG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="PI.html">
-  <img src="logo20.JPG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="RB.html">
-  <img src="logo21.JPG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="TS.html">
-  <img src="logo22.JPG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="OVO.html">
-  <img src="logo23.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="https://math-world.cyclic.app/">
-  <img src="logo24.JPG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="TF.html">
-  <img src="logo25.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="2048.html">
-  <img src="logo26.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="SM.html">
-  <img src="splash.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="BAB.html">
-  <img src="logo30.JPG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="DriveMad">
-  <img src="logo31.JPG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="CrossyRoad">
-  <img src="logo31.PNG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="CP.html">
-  <img src="cp.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="BallisticChickens">
-  <img src="logo32.PNG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="flappy-bird">
-  <img src="logo33.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="Missiles">
-  <img src="logo34.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="CC.html">
-  <img src="logo35.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="coolmathgames.html">
-  <img src="logo36.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="https://math-park.cyclic.app/">
-  <img src="logo37.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="worlds-hardest-game-2">
-  <img src="logo39.jpg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="https://ugps-admin.github.io">
-  <img src="hexa.svg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="SB.html">
-  <img src="https://raw.githubusercontent.com/3kh0/3kh0-Assets/main/soundboard/img/mlg-favicon.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="SS.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Gamea-Assets/main/soccer-skills/splash.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="AT.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/awesometanks2/awesometanks2.jpg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="AU.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/among-us/red.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="WG.html">
-  <img src="WG.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="FNAW.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/fnaw/splash.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="DH.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/drift-hunters/drift-hunters.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="ST.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/stack/stack.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="SL.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/slope/slope4.jpeg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="BR.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/basket-random/splash.jpeg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="SCR.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Gamea-Assets/main/soccer-random/splash.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="DTH.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Gamea-Assets/main/draw-the-hill/icons/icon-512.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="CR.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Gamea-Assets/main/cluster-rush/splash.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="FB.html">
-  <img src="https://raw.githubusercontent.com/PurePro4561/Gamea-Assets/main/factoryballs/images/splash.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="neal.html">
-  <img src="03C06ADC-9043-46AD-919B-2C9BDC79E738.jpeg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="roblox.html">
-  <img src="C59FDA2C-072D-4F16-B2B4-074AFDEEDB75.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="roblox2.html">
-  <img src="DB427967-07EB-4A7C-ACE2-B96BF98559F6.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="nowgg.html">
-  <img src="4B081271-0D3E-46D3-B599-AA2AC52263C9.jpeg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="PM">
-  <img src="47429CDB-9322-4E61-8AD8-CB2F29841CA4.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Remix-on-Glitch">
-  <img src="C17B93B5-986C-42FC-B579-3E6DADA5451C.png" alt="Logo" style="width: 400px; height: 100px;" />
-</a>
-<a href="roblox3.html">
-  <img src="3D49CA77-A505-42EA-9805-3125EA05D970.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="roblox4.html">
-  <img src="E9B0E831-BBC2-4890-8F7B-58F3445040F1.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="confirm.html">
-  <img src="960EA3C0-9A33-4D06-BB16-189D1D4DBD2C.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="DC.html">
-  <img src="97927E1A-6B06-4DDD-A4E5-97ED5620E7FC.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="rocket.html">
-  <img src="logo38.JPG" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="yohoho">
-  <img src="CD976D78-C96F-4008-80F7-1B8FC3D13F6A.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="Dogeminer2">
-  <img src="A0211D61-1FC8-4669-AFAD-6FFFD6F39590.jpeg" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
-<a href="BTB.html">
-  <img src="https://raw.githubusercontent.com/PurePro4563/website-v3/main/projects/breakingthebank/breakingthebank.png" alt="Logo" style="width: 100px; height: 100px;" />
-</a>
+    <div class="game-card" data-title="Five Nights At Winstons">
+        <a href="FNAW.html">
+            <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/fnaw/splash.png" class="game-image">
+            <div class="game-title">Five Nights At Winston's</div>
+            
+        </a>
+    </div>
+
+    <div class="game-card" data-title="Drift Hunters">
+        <a href="DH.html">
+            <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/drift-hunters/drift-hunters.png" class="game-image">
+            <div class="game-title">Drift Hunters</div>
+            
+        </a>
+    </div>
+
+    <div class="game-card" data-title="Stack Tiles">
+        <a href="ST.html">
+            <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/stack/stack.png" class="game-image">
+            <div class="game-title">Stack Tiles</div>
+            
+        </a>
+    </div>
+
+    <div class="game-card" data-title="Slope">
+        <a href="SL.html">
+            <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/slope/slope4.jpeg" class="game-image">
+            <div class="game-title">Slope</div>
+            
+        </a>
+    </div>
+
+    <div class="game-card" data-title="Basket Random">
+        <a href="BR.html">
+            <img src="https://raw.githubusercontent.com/PurePro4561/Games-Assets/main/basket-random/splash.jpeg" class="game-image">
+            <div class="game-title">Basket Random</div>
+            
+        </a>
+    </div>
+
+    <div class="game-card" data-title="Soccer Random">
+        <a href="SCR.html">
+            <img src="https://raw.githubusercontent.com/PurePro4561/Gamea-Assets/main/soccer-random/splash.png" class="game-image">
+            <div class="game-title">Soccer Random</div>
+            
+        </a>
+    </div>
+
+    <div class="game-card" data-title="Draw The Hill">
+        <a href="DTH.html">
+            <img src="https://raw.githubusercontent.com/PurePro4561/Gamea-Assets/main/draw-the-hill/icons/icon-512.png" class="game-image">
+            <div class="game-title">Draw The Hill</div>
+            
+        </a>
+    </div>
+
+    <div class="game-card" data-title="Cluster Rush">
+        <a href="CR.html">
+            <img src="https://raw.githubusercontent.com/PurePro4561/Gamea-Assets/main/cluster-rush/splash.png" class="game-image">
+            <div class="game-title">Cluster Rush</div>
+            
+        </a>
+    </div>
+
+    <div class="game-card" data-title="Factory Balls">
+        <a href="FB.html">
+            <img src="https://raw.githubusercontent.com/PurePro4561/Gamea-Assets/main/factoryballs/images/splash.png" class="game-image">
+            <div class="game-title">Factory Balls</div>
+            
+        </a>
+    </div>
+    <div class="game-card" data-title="Neal Fun">
+    <a href="neal.html">
+      <img src="03C06ADC-9043-46AD-919B-2C9BDC79E738.jpeg" class="game-image">
+      <div class="game-title">Neal.fun</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="Roblox Server 1">
+    <a href="roblox.html">
+      <img src="C59FDA2C-072D-4F16-B2B4-074AFDEEDB75.png" class="game-image">
+      <div class="game-title">Roblox Server 1</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="Roblox Server 2">
+    <a href="roblox.html">
+      <img src="DB427967-07EB-4A7C-ACE2-B96BF98559F6.png" class="game-image">
+      <div class="game-title">Roblox Server 2</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="Nowgg">
+    <a href="roblox.html">
+      <img src="4B081271-0D3E-46D3-B599-AA2AC52263C9.jpeg" class="game-image">
+      <div class="game-title">Now.gg</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="PacMan">
+    <a href="PM">
+      <img src="47429CDB-9322-4E61-8AD8-CB2F29841CA4.png" class="game-image">
+      <div class="game-title">PacMan</div>
+      
+    </a>
+  </div>
+
+
+  <div class="game-card" data-title="Roblox Server 3">
+    <a href="roblox.html">
+      <img src="3D49CA77-A505-42EA-9805-3125EA05D970.png" class="game-image">
+      <div class="game-title">Roblox Server 3</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="Roblox Server 4">
+    <a href="roblox.html">
+      <img src="E9B0E831-BBC2-4890-8F7B-58F3445040F1.png" class="game-image">
+      <div class="game-title">Roblox Server 4</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="Chat">
+    <a href="confirm.html">
+      <img src="960EA3C0-9A33-4D06-BB16-189D1D4DBD2C.png" class="game-image">
+      <div class="game-title">Chat</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="Drift Chase">
+    <a href="DC.html">
+      <img src="97927E1A-6B06-4DDD-A4E5-97ED5620E7FC.png" class="game-image">
+      <div class="game-title">Drift Chase</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="Blumgi Rocket">
+    <a href="rocket.html">
+      <img src="logo38.JPG" class="game-image">
+      <div class="game-title">Blumgi Rocket</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="Yohoho io">
+    <a href="yohoho">
+      <img src="CD976D78-C96F-4008-80F7-1B8FC3D13F6A.png" class="game-image">
+      <div class="game-title">Yohoho.IO</div>
+      
+    </a>
+  </div>
+    <div class="game-card" data-title="Doge Miner 2">
+    <a href="Dogeminer2">
+      <img src="A0211D61-1FC8-4669-AFAD-6FFFD6F39590.jpeg" class="game-image">
+      <div class="game-title">Doge Miner 2</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="ChatGPT">
+    <a href="gpt.html">
+      <img src="IMG_0111.png" class="game-image">
+      <div class="game-title">ChatGPT</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="Case Clicker">
+    <a href="CAC.html">
+      <img src="IMG_0022.png" class="game-image">
+      <div class="game-title">Case Clicker</div>
+      
+    </a>
+  </div>
+
+  <div class="game-card" data-title="Monkey Mart">
+    <a href="MM.html">
+      <img src="https://raw.githubusercontent.com/PurePro4561/PurePro4561.github.io-v2/main/IMG_0558.png" class="game-image">
+      <div class="game-title">Monkey Mart</div>
+      
+    </a>
+  </div>
+
+<div class="game-card" data-title="Admin Access">
+    <a href="Passtest">
+      <img src="Untitled 58.png" class="game-image">
+      <div class="game-title">Admin Access ONLY</div>
+      
+    </a>
+  </div>
+    
+  </div>
+  </div>
 </center>
+<script>
+  // Get the elements from the document
+  let searchInput = document.getElementById("search-input");
+  let searchButton = document.getElementById("search-button");
+  let gameContainer = document.getElementById("game-container");
+  let gameCards = document.querySelectorAll(".game-card");
+
+  function filterSearch (searchValue) {
+      // Loop through the game cards
+      for (let i = 0; i < gameCards.length; i++) { 
+        // Get the data-title attribute of each game card
+        let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase();
+        // If the search value matches the game title
+        if (gameTitle.includes(searchValue)) {
+          // Show the game card
+          gameCards[i].style.display = "block";
+        } 
+        else {
+          // Hide the game card
+          gameCards[i].style.display = "none";
+         }
+       }
+  }
+  
+
+
+  // Add an event listener to the search button
+  searchButton.addEventListener("click", function() {
+    // Get the value of the search input
+    filterSearch(searchInput.value.toLowerCase());
+  });
+  searchInput.addEventListener("input", function() {
+    let searchValue = searchInput.value.toLowerCase();
+    filterSearch(searchValue);
+});
+</script>
+
+</body>
+</html>
     
 <a href="terms">Privacy Policy</a>
 </html>
