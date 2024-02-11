@@ -1,0 +1,36 @@
+<button onclick="goFullscreen()" class="animated-button">Fullscreen</button>
+<iframe id="gameFrame" src="https://infmapi.github.io/infmapr.github.io/UBG/temple-of-boom.html" width="100%" height="1000px" scrolling="no" frameborder="0" allowfullscreen></iframe>
+<h1>PLease do not open up any games on poki since it might have proxy crashes. 😊</h1>
+<script>
+  function goFullscreen() {
+    var gameFrame = document.getElementById("gameFrame");
+
+    if (gameFrame.requestFullscreen) {
+      gameFrame.requestFullscreen();
+    } else if (gameFrame.webkitRequestFullscreen) { /* Safari */
+      gameFrame.webkitRequestFullscreen();
+    } else if (gameFrame.msRequestFullscreen) { /* IE11 */
+      gameFrame.msRequestFullscreen();
+    }
+  }
+</script>
+<style>
+		.animated-button {
+		  background-color: #4CAF50; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		  transition-duration: 0.4s;
+		}
+
+		.animated-button:hover {
+		  background-color: white;
+		  color: #4CAF50;
+		}
+	</style>

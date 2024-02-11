@@ -1,0 +1,187 @@
+/* homecss.css */
+
+body {
+    background-image: url('Images/Mesh Gradient (2).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Lexend', sans-serif; /* Specify the font-family for the entire document */
+}
+
+.navbar {
+    width: 25%;
+    margin: 13px auto 0;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 35px;
+    display: flex;
+    justify-content: space between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar nav li {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-family: 'Lexend', sans-serif; /* Specify the font-family for the navigation links */
+}
+
+.logo {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 50px;
+}
+.big-title {
+    text-align: center;
+    color: white;
+    font-size: 5.9rem;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+.purple-gradient {
+    background: linear-gradient(to right, #ffffff, #8000FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.small-text {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.line {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+}
+
+.purple-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s, color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+    background-clip: text; /* Add gradient to the button text */
+    -webkit-background-clip: text;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Add glass-like border */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Add glass-like shadow */
+}
+
+.purple-button:hover {
+    background: linear-gradient(to bottom, #673ab7, #9c27b0);
+    transform: scale(1.1);
+    color: white;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: white;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 500%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    border: 2px solid white; /* Change border color to white */
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+}
